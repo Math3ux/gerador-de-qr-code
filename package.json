@@ -1,0 +1,14 @@
+{
+  "name": "gerador-qr-code",
+  "version": "1.0.0",
+  "description": "Kit de utilidades para e-commerce",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
