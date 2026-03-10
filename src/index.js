@@ -2,15 +2,15 @@
 import mainPrompt from './prompts/prompt-main.js';
 import prompt from 'prompt';
 import createQRCode from './services/qr-code/create.js';
+import createPassword from './services/password/create.js';
 
 async function main(){
     prompt.get(mainPrompt, async (err, choose) => {
 
         if (choose.select === '1') {
-            createQRCode();
+            await createQRCode();
         } else if (choose.select === '2') {
-            const { default: password } = await import('./tools/password.js');
-            password();
+            await createPassword();
         }
     });
 }
